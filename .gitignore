@@ -1,6 +1,6 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+# *.py[oc]
 build/
 dist/
 wheels/
@@ -15,3 +15,8 @@ __pycache__/
 /data/raw/*
 /data/processed/*
 /models/*
+
+# Keys and monitoring files
+.env
+mlruns/
+

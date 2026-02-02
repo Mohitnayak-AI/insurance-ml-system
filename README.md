@@ -1,23 +1,25 @@
-🔹 Project Title
+## 🔹 Project Title
 
-Insurance Claims Fraud Detection – Production ML System
-
-⸻
-
-🔹 Problem Statement
-
-Build a production-grade ML system to predict fraudulent insurance claims before approval, with real-time inference, monitoring, retraining, and MCP-based AI orchestration.
+	•	Insurance Claims Fraud Detection – Production ML System
 
 ⸻
 
-🔹 Users
+## 🔹 Problem Statement
+
+	•	Build a production-grade ML system to predict fraudulent insurance claims before approval, with real-time inference, monitoring, retraining, and MCP-based AI orchestration.
+
+⸻
+
+## 🔹 Users
+
 	•	Claims processing system
 	•	Fraud investigation team
 	•	AI assistant (via MCP)
 
 ⸻
 
-🔹 Success Metrics
+## 🔹 Success Metrics
+
 	•	API latency < 2s
 	•	Fraud recall > 80%
 	•	Zero schema-breaking deployments
@@ -25,14 +27,30 @@ Build a production-grade ML system to predict fraudulent insurance claims before
 
 ⸻
 
-🔹 Constraints
+## 🔹 Constraints
+
 	•	Explainable predictions
 	•	Auditable decisions
 	•	Secure access
 
-🔹 Decide System Type
+## 🔹 Decide System Type
+
 	•	Inference: Real-time REST API
 	•	Training: Daily batch
 	•	Data Source: CSV → Database (simulated production)
 	•	Deployment: Docker (Azure-ready)
 	•	AI Access: MCP tools
+
+## 🔹 Tech Stack
+
+| Layer | Tool |
+| :--- | :--- |
+| **Language** | Python 3.10 |
+| **Data** | Pandas, SQL |
+| **Validation** | Great Expectations |
+| **ML** | Scikit-learn / XGBoost |
+| **Tracking** | MLflow |
+| **API** | FastAPI |
+| **Containers** | Docker |
+| **Monitoring** | Evidently AI |
+| **Orchestration** | MCP |

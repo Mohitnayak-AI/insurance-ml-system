@@ -1,0 +1,16 @@
+{
+    "claim_id": { "type": "string", "pattern": "^C[0-9]+$" },
+    "policy_id": { "type": "string", "pattern": "^P[0-9]+$" },
+    "customer_age": { "type": "integer", "minimum": 18, "maximum": 100 },
+    "customer_gender": { "enum": ["M", "F", "Other"] },
+    "policy_tenure_days": { "type": "integer", "minimum": 0 },
+    "claim_amount": { "type": "number", "minimum": 0 },
+    "claim_type": { "enum": ["Collision", "Theft", "Fire", "Other"] },
+    "incident_severity": { "enum": ["Minor Damage", "Major Damage", "Total Loss"] },
+    "num_previous_claims": { "type": "integer", "minimum": 0 },
+    "days_since_last_claim": { "type": "integer", "description": "999 represents first-time claimants" },
+    "police_report_available": { "enum": ["Yes", "No"] },
+    "vehicle_damage": { "enum": ["Yes", "No"] },
+    "property_damage": { "enum": ["Yes", "No"] },
+    "is_fraud": { "type": "integer", "enum": [0, 1] }
+}
